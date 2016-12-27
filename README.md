@@ -17,7 +17,7 @@ Since this app is in the early stages of development, now is a great time for co
 4. Make a new branch titled after the Issue your working on, all your commits should be to this branch. 
 5. When your ready, submit a pull request outlining what you've done and how your code works. We'll take it from there. 
 
- Happy Contributing!
+Happy Contributing!
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
