@@ -12,9 +12,9 @@ LingWizard is in its infant stages of development. This means that we are curren
 Since this app is in the early stages of development, now is a great time for contributors to join in since there is so much work to be done and code that needs to be written. No matter your skill level, there is definitly something you can help with. Follow the below instructions to begin contributing.
 
 1. Fork the repository to your account and set it up locally.
-2. Check the [Issues page](https://github.com/Ninjaman494/LingWizard/issues) for a list of what currenty needs to be built. 
-3. After you pick an issue to work on, PLEASE comment on it so we know someone is working on it. In some cases, someone could already be working on an issue. Also, some issues are really broad, so we will create another, more specific, issue when someone responds.
-4. Make a new branch titled after the Issue your working on, all your commits should be to this branch. 
+2. Check the [Issues page](https://github.com/Ninjaman494/LingWizard/issues) for a list of what currently needs to be built. 
+3. After you pick an issue to work on, PLEASE comment on it so we know someone is working on it. In some cases, someone could already be working on an issue. Also, some issues are really broad, so we might request that you create another, more specific, issue when you respond.
+4. Make a new branch titled after the issue your working on, all your commits should be to this branch. 
 5. When your ready, submit a pull request outlining what you've done and how your code works. We'll take it from there. 
 
 Happy Contributing!
