@@ -11,7 +11,7 @@ Since this app is in the early stages of development, now is a great time for co
 
 1. Fork the repository to your account and set it up locally.
 2. Check the [Issues page](https://github.com/Ninjaman494/LingWizard/issues) for a list of what currenty needs to be built. 
-3. After you pick an issue to work on, PLEASE comment on it so we know someone is working on it. In some cases, someone could already be working on an issue. 
+3. After you pick an issue to work on, PLEASE comment on it so we know someone is working on it. In some cases, someone could already be working on an issue. Also, some issues are really broad, so we will create another, more specific, issue when someone responds.
 4. Make a new branch titled after the Issue your working on, all your commits should be to this branch. 
 5. When your ready, submit a pull request outlining what you've done and how your code works. We'll take it from there. 
 
