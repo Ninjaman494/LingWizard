@@ -1,0 +1,1 @@
+Example text for this lesson.I used a text file for simplicity, the filetype will have to be changed to accommodate images,tables,etc. This also means changing readFile and LessonSelectionEvent later on.
