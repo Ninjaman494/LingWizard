@@ -2,9 +2,11 @@
 
 LingWizard is a language learning app that uses games to teach Grammar and eventually Vocabulary. There are many apps out there that teach vocab, and some do it very well(Rosetta Stone,Memrise,etc.). However, they barely cover grammar or omit it entirely from their lessons, giving users only half of the picture. LingWizard aims to apply the same gamification strategies that current language learning apps use and apply it to grammatical concepts.
 
-## Present Stage of Development
+## Present Stage of Development 
+![alt text][logo]
+[logo]: http://i.imgur.com/52Xh6we.png "Framework Diagram"
 
-LingWizard is in its infant stages of development. This means that we are currently building the backend framework for the app. A diagram outline of the framework will eventually be added to the readme outlining how the app will be structured.
+LingWizard is in its infant stages of development. This means that we are currently building the backend framework for the app. The diagram above outlines the various components and how they interact with each other. The three types of components are: View(blue), Main Model(orange),and Lanugage Package(yellow). There is only one View and one Main Model, but there is a Language Package for each language. The arrows show the flow of information between components. 
 
 ## Contributing
 Since this app is in the early stages of development, now is a great time for contributors to join in since there is so much work to be done and code that needs to be written. No matter your skill level, there is definitly something you can help with. Follow the below instructions to begin contributing.
