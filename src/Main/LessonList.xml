@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<LingWizard>
+    <language id="Korean">
+        <Unit id="KU1" name="Example Unit 1">
+            <lesson id="KU1L1" path="Korean/data/Unit1/lesson1">Example Lesson 1</lesson>
+            <lesson id="KU1L2" path="/src/Korean/data/Unit1/lesson2">Example Lesson 2</lesson>
+            <lesson id="KU1L3" path="/src/Korean/data/Unit1/lesson3">Example Lesson 3</lesson>
+        </Unit>
+        <Unit id="KU2" name="Example Unit 2">
+            <lesson path="KU2L1">Example Lesson 1</lesson>
+            <lesson path="KU2L2">Example Lesson 2</lesson>
+        </Unit>
+    </language>
+    <language id="French">
+        <Unit id="FU1" name="Example Unit 1">
+            <lesson path="FU1L1">Example Lesson 1</lesson>
+            <lesson path="FU2L2">Example Lesson 2</lesson>
+        </Unit>
+        <Unit id="FU2" name="Example Unit 2">
+            <lesson path="FU2L1">Example Lesson 1</lesson>
+            <lesson path="FU2L2">Example Lesson 2</lesson>
+        </Unit>
+    </language>
+</LingWizard>

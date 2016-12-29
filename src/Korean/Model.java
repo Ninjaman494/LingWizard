@@ -1,7 +1,7 @@
 package Korean;
 
 import Main.LanguageModel;
-import Main.LessonSelectionEvent;
+import Main.UnitSelectionEvent;
 import Main.TextView;
 import Templates.LessonTemplate;
 
@@ -25,9 +25,9 @@ public class Model extends LanguageModel {
         return readFile("LessonList.txt");
     }
 
-    public void handleEvent(LessonSelectionEvent event){
-        currentLesson = event.getLesson();
-        view.pickTemplate(new LessonTemplate(readFile("lessons/"+currentLesson+".txt").get(0)));
+    public void handleEvent(UnitSelectionEvent event){
+        currentLesson = event.getSelection();
+        view.pickTemplate(new LessonTemplate(readFile("data/"+currentLesson+".txt").get(0)));
     }
 
     public String getLanguage() {
@@ -37,7 +37,6 @@ public class Model extends LanguageModel {
     //Helper method for reading files
     public ArrayList<String> readFile(String path){
         String dir = new File("Korean").getAbsolutePath();
-        System.out.println(dir);
         ArrayList<String> data = new ArrayList<>();
         try {
             BufferedReader file = new BufferedReader(new FileReader(dir+"/"+path));

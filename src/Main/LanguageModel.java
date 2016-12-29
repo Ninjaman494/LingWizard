@@ -11,5 +11,5 @@ public abstract class LanguageModel {
         this.view = view;
     }
     public abstract ArrayList<String> getLessonList();
-    public abstract void handleEvent(LessonSelectionEvent event);
+    public abstract void handleEvent(UnitSelectionEvent event);
 }

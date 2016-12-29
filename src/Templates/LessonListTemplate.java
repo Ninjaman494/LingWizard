@@ -1,18 +1,18 @@
 package Templates;
 
-import Main.UnitSelectionEvent;
+import Main.LessonSelectionEvent;
 import Main.MainModule;
+import Main.UnitSelectionEvent;
 
 import java.util.ArrayList;
-import java.util.Observable;
 import java.util.Scanner;
 
 /**
- * Created by akash on 12/26/2016.
+ * Created by akash on 12/28/2016.
  */
-public class ListTemplate implements Template {
+public class LessonListTemplate implements Template{
     ArrayList<String> lessons;
-    public ListTemplate(ArrayList<String> lessons){
+    public LessonListTemplate(ArrayList<String> lessons){
         this.lessons = lessons;
     }
 
@@ -22,6 +22,6 @@ public class ListTemplate implements Template {
             System.out.println(s);
         }
         int choice = input.nextInt();
-        main.handleEvent(new UnitSelectionEvent(this,lessons.get(choice-1)));
+        main.handleEvent(new LessonSelectionEvent(this,lessons.get(choice-1)));
     }
 }

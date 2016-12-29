@@ -8,7 +8,7 @@ import java.util.Observable;
 /**
  * Created by akash on 12/26/2016.
  */
-public class Game1Template extends Observable implements Template  {
+public class Game1Template implements Template  {
     String Sentence;
     ArrayList Options;
     public Game1Template(String Sentence, ArrayList Options){

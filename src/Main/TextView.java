@@ -14,7 +14,7 @@ public class TextView {
     MainModule model;
     public TextView(MainModule m){
         model = m;
-        this.display(model.getLangs());
+        this.display(model.getLanguages());
     }
 
     public void pickTemplate(Template template){

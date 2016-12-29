@@ -3,11 +3,11 @@ package Main;
 import java.util.EventObject;
 
 /**
- * Created by akash on 12/28/2016.
+ * Created by akash on 12/26/2016.
  */
-public class LessonSelectionEvent extends EventObject {
+public class UnitSelectionEvent extends EventObject {
     String selection;
-    public LessonSelectionEvent(Object source, String lesson){
+    public UnitSelectionEvent(Object source, String lesson){
         super(source);
         this.selection = lesson;
     }
