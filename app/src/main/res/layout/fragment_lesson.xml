@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_lesson"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    tools:context="example.LingWizard.LessonFragment">
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hangul is the Korean alphabet. It was originally created to make learning to write easier"
+            android:textSize="24sp"
+            android:textColor="@color/text_color_black"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="@dimen/activity_vertical_margin"/>
+        <ImageView
+            android:layout_width="316dp"
+            android:layout_height="242dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_menu_gallery"/>
+
+</FrameLayout>

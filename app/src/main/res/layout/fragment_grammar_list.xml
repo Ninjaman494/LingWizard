@@ -1,0 +1,11 @@
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grammar_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:divider="@null"
+    android:dividerHeight="0dp"
+
+    tools:context="example.LingWizard.LessonListActivity" />

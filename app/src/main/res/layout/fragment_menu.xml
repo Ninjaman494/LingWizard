@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dp"
+    android:layout_margin="2dp">
+
+    <ImageView
+        android:id="@+id/comic_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:adjustViewBounds="true"
+        android:src="@drawable/cereal_guy"/>
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/text_background"
+        android:text="LOL Guy"
+        android:elevation="10dp"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+</FrameLayout>

@@ -1,0 +1,17 @@
+<lessonplan headertext="Lesson 1 - The ABC's of Hangul">
+        <Section titletext="What is Hangul?">
+                <lesson image="confusedman.gif" text="Hangul is the Korean alphabet. It was originally created to make learning to write easier"/>
+                <lesson image="blockconstruction.gif" text="Each block in Hangul represents a syllable and is comprised of 2-4 letters"/>
+                <lesson image="letters.gif" text="Letters can be either consonants or vowels(like English!)"/>
+                <lesson image="twosounds.gif" text="Careful! Some consonants can have two sounds. You'll learn about this later"/>
+        </Section>
+        <vocab>
+                <Term name ="ㅂ"  definition = "b"/>
+                <Term name="ㅈ" definition="j"/>
+                <Term name="ㄷ" definition="d/t"/>
+        </vocab>
+        <grammar>
+                <concept>Syllable formation</concept>
+                <concept>Types of Letters</concept>
+        </grammar>
+</lessonplan>

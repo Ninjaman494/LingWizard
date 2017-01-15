@@ -1,0 +1,17 @@
+<French>
+    <Unit id="unit1" name="Example Unit 1">
+        <lesson id="lesson1">Example Lesson 1</lesson>
+        <lesson id="lesson2">Example Lesson 2</lesson>
+        <lesson id="lesson3">Example Lesson 3</lesson>
+    </Unit>
+    <Unit id="unit2" name="Example Unit 2">
+        <lesson id="lesson1">Example Lesson 1</lesson>
+        <lesson id="lesson2">Example Lesson 2</lesson>
+        <lesson id="lesson3">Example Lesson 3</lesson>
+    </Unit>
+    <Unit id="unit3" name="Example Unit 3">
+        <lesson id="lesson1">Example Lesson 1</lesson>
+        <lesson id="lesson2">Example Lesson 2</lesson>
+        <lesson id="lesson3">Example Lesson 3</lesson>
+    </Unit>
+</French>

@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_lesson_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="example.LingWizard.LessonDetailPage.LessonDetailActivity">
+
+        <fragment
+            android:id="@+id/headlines_fragment"
+            android:name="example.LingWizard.LessonDetailPage.LessonInfoFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_lesson_info" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/tabContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/TabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextAppearance="@style/TabLayout"
+                app:tabTextColor="@color/colorPrimaryLight">
+
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lesson Notes" />
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Grammar" />
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vocab" />
+
+            </android.support.design.widget.TabLayout>
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+    <fragment
+        android:id="@+id/fragment_bottom_bar"
+        android:name="example.LingWizard.LessonDetailPage.BottomBarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        tools:layout="@layout/fragment_bottom_bar" />
+</FrameLayout>
