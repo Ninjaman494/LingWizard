@@ -69,9 +69,14 @@ public class Section {
         return frags;
     }
 
+    public Lesson getLesson(int position){
+        return (Lesson)components.get(position);
+    }
+
     public ArrayList<String> getImages(){
         return null;
     }
+
 }
 
 @Root

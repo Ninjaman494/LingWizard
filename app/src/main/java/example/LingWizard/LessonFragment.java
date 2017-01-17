@@ -69,4 +69,8 @@ public class LessonFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
     }
+
+    public String getText(){
+        return getArguments().getString(text);
+    }
 }

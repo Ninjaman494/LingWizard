@@ -13,6 +13,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import example.LingWizard.LessonFragment;
+
 /**
  * Created by akash on 1/7/2017.
  */
@@ -43,7 +45,10 @@ public class LessonPlan{
         return grammar;
     }
 
-
+    public LessonFragment getLessonFragment(int section,int lesson){
+        Lesson l = sections.get(section).getLesson(lesson);
+        return LessonFragment.newInstance(l.getText(),l.getImage());
+    }
 
     public static void main(String[] args){
         System.out.println("hello");

@@ -26,7 +26,9 @@ public class CustomViewPager extends ViewPager {
     @Override
     public boolean onTouchEvent(MotionEvent me){
         float x = me.getX();
-        //System.out.println(me.getAction());
+        if(mListener==null){
+            return super.onTouchEvent(me);
+        }
         switch (me.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 //System.out.println("down");
@@ -36,7 +38,7 @@ public class CustomViewPager extends ViewPager {
                 if (mStartDragX < x && getCurrentItem() == 0) {
                     //mListener.onSwipeOutAtStart();
                 } else if (mStartDragX > x && getCurrentItem() == getAdapter().getCount() - 1) {
-                    mListener.onSwipeOutEnd();
+                        mListener.onSwipeOutEnd();
                 }
                 break;
         }

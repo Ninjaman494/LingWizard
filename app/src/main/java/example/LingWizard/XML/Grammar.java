@@ -1,5 +1,6 @@
 package example.LingWizard.XML;
 
+import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.ElementList;
 
 import java.util.ArrayList;
@@ -10,10 +11,32 @@ import java.util.List;
  */
 
 public class Grammar {
-    @ElementList(type=String.class,entry="concept",inline = true)
-    List<String> concepts;
+    @ElementList(type=Concept.class,entry="concept",inline = true)
+    List<Concept> concepts;
 
-    public ArrayList<String> getConcepts(){
+    public ArrayList<Concept> getConcepts(){
         return (ArrayList)concepts;
+    }
+
+    public String getName(int position){
+        return concepts.get(position).getName();
+    }
+
+    public ArrayList<String> getPages(int position){
+        return concepts.get(position).getPages();
+    }
+}
+class Concept{
+    @Attribute
+    String name;
+    @ElementList(type=String.class,entry="page",inline=true,required = false)
+    List<String> pages;
+
+    public String getName(){
+        return name;
+    }
+
+    public ArrayList<String> getPages(){
+        return (ArrayList)pages;
     }
 }

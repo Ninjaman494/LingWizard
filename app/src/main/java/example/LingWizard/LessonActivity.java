@@ -114,7 +114,7 @@ public class LessonActivity extends AppCompatActivity implements CustomViewPager
 
     }
 
-    private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
+    public static class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
         ArrayList<Fragment> fragments;
         public ScreenSlidePagerAdapter(FragmentManager fm, ArrayList<Fragment> fragments) {
             super(fm);
