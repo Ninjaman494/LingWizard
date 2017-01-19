@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -73,6 +74,14 @@ public class VocabListFragment extends Fragment {
             vocab = plan.getVocab();
         }
         view.setAdapter(new VocabAdapter(vocab.getTerms(),vocab.getDefinitions(),inflater,R.layout.vocab_list_view));
+        view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                TextView term = (TextView)view.findViewById(R.id.term);
+                TextView definition = (TextView)view.findViewById(R.id.definition);
+                System.out.println(term.getText()+": "+definition.getText());
+            }
+        });
         return view;
     }
 
