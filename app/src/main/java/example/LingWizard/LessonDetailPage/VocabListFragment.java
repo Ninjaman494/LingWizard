@@ -79,10 +79,6 @@ public class VocabListFragment extends Fragment {
         view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                TextView term = (TextView)view.findViewById(R.id.term);
-                TextView definition = (TextView)view.findViewById(R.id.definition);
-                System.out.println(term.getText()+": "+definition.getText());
-
                 Intent intent = new Intent(getActivity(),VocabListActivity.class);
                 intent.putStringArrayListExtra("terms",vocab.getTerms());
                 intent.putStringArrayListExtra("definitions",vocab.getDefinitions());

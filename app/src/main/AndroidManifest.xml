@@ -28,7 +28,8 @@
 
         <activity android:name=".LessonDetailPage.LessonDetailActivity" />
         <activity android:name=".LessonDetailPage.GrammarListActivity" />
-        <activity android:name=".LessonDetailPage.VocabListActivity"></activity>
+        <activity android:name=".LessonDetailPage.VocabListActivity" />
+        <activity android:name=".LessonDetailPage.LessonNotesActivity"></activity>
     </application>
 
 </manifest>

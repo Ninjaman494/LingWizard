@@ -1,6 +1,7 @@
 package example.LingWizard.LessonDetailPage;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.widget.FrameLayout;
@@ -71,8 +72,8 @@ public class LessonNotesFragment extends Fragment {
             plan = ((LessonDetailActivity) getActivity()).getLessonPlan();
         }
 
-        ArrayList<String> notes = new ArrayList<>();
-        ArrayList<String> images = new ArrayList<>();
+        final ArrayList<String> notes = new ArrayList<>();
+        final ArrayList<String> images = new ArrayList<>();
         for(Section s: plan.getSections()){
             notes.addAll(s.getNotes());
         }
@@ -80,6 +81,18 @@ public class LessonNotesFragment extends Fragment {
         for(int i=0;i<notes.size();i++) {
             FrameLayout card = (FrameLayout) inflater.inflate(R.layout.lesson_note, container, false);
             ((TextView)card.findViewById(R.id.textView)).setText(notes.get(i));
+            card.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    System.out.println(((TextView)v.findViewById(R.id.textView)).getText());
+                    Intent intent = new Intent(getActivity(),LessonNotesActivity.class);
+                    intent.putStringArrayListExtra("notes",notes);
+                    intent.putStringArrayListExtra("images",images);
+                    String text = ((TextView)v.findViewById(R.id.textView)).getText().toString();
+                    intent.putExtra("start",notes.indexOf(text));
+                    startActivity(intent);
+                }
+            });
             l.addView(card);
         }
         return v;
