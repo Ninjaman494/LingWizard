@@ -1,6 +1,7 @@
 package example.LingWizard.LessonDetailPage;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -73,6 +74,7 @@ public class VocabListFragment extends Fragment {
             LessonPlan plan = ((LessonDetailActivity) getActivity()).getLessonPlan();
             vocab = plan.getVocab();
         }
+
         view.setAdapter(new VocabAdapter(vocab.getTerms(),vocab.getDefinitions(),inflater,R.layout.vocab_list_view));
         view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -80,6 +82,12 @@ public class VocabListFragment extends Fragment {
                 TextView term = (TextView)view.findViewById(R.id.term);
                 TextView definition = (TextView)view.findViewById(R.id.definition);
                 System.out.println(term.getText()+": "+definition.getText());
+
+                Intent intent = new Intent(getActivity(),VocabListActivity.class);
+                intent.putStringArrayListExtra("terms",vocab.getTerms());
+                intent.putStringArrayListExtra("definitions",vocab.getDefinitions());
+                intent.putExtra("start",position);
+                startActivity(intent);
             }
         });
         return view;

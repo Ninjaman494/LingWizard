@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import example.LingWizard.R;
 
@@ -34,7 +35,6 @@ public class VocabCardFragment extends Fragment {
      * @param definition Parameter 2.
      * @return A new instance of fragment VocabCardFragment.
      */
-    // TODO: Rename and change types and number of parameters
     public static VocabCardFragment newInstance(String term, String definition) {
         VocabCardFragment fragment = new VocabCardFragment();
         Bundle args = new Bundle();
@@ -57,7 +57,12 @@ public class VocabCardFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_vocab_card, container, false);
+        View view = inflater.inflate(R.layout.fragment_vocab_card, container, false);
+        TextView termView = (TextView)view.findViewById(R.id.term);
+        TextView definitionView = (TextView)view.findViewById(R.id.definition);
+        termView.setText(term);
+        definitionView.setText(definition);
+        return view;
     }
 
 }

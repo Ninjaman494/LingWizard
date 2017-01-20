@@ -12,10 +12,12 @@
         </vocab>
         <grammar>
                 <concept name="Syllables in Hangul">
+                        <page>1.1</page>
                         <page>1.2</page>
                 </concept>
                 <concept name="Types of Letters">
                         <page>1.3</page>
+                        <page>1.4</page>
                 </concept>
         </grammar>
 </lessonplan>
